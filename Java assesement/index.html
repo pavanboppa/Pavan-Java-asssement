@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title> book my train </title>
+<head>
+    <h1 style="background-color:orange; text-align:center;">Book My Train</h1>
+    <link rel="stylesheet" href="style.css">
+   
+    <ul>
+        <li><a href = "#"></a>Home</li>a></li>
+        <li>Services</li>
+        <li>Route</li>
+        <li>Disruptions</li>
+        <li>More</li>
+        <li><a href="#"> Register </a> </li>
+        </ul>
+
+        <script type="text/javascript">
+            function Validation()
+            {
+            var a = document.form.address.value;
+            if(a=="")
+            {
+            alert("please Enter the details");
+            document.form.address.focus();
+            return false;
+            }
+            if((a.length < 20) || (a.length > 100))
+            {
+            alert(" Your textarea must be 20 to 100 characters");
+            document.form.address.select();
+            return false;
+            }
+            }
+            </script>
+   </head>
+<body>
+    <div class = "signin">
+        <label for="fname">User Name:</label><br>
+        <input type="text" id="UName" name="fname" value=""><br>
+        <label for="lname">Password:</label><br>
+        <input type="text" id="lUName" name="Password" value=""><br><br>
+        <input type="submit" value="Submit">
+        <form name="form" method="post" onsubmit="return Validation()">
+            <tr>
+            <td> Address:</td>
+            <td><textarea name="address" cols="60" rows="10"></textarea></td>
+            </tr>
+            <tr>
+            <td></td><br>
+            <td align="center"><input type="submit" name="sub" value="Submit"></td>
+            </tr>
+            </form>
+        </div>
+<div>
+ <ol>
+    <li><a href = "booking.html" target = "_blank"> Booking</a></li>
+    <li><a href = "refund.html" target = "_blank">Refund</a></li>
+    <li><a href="myki.html" target = "_blank">Myki-Topup</a></li>
+    <li><a href ="fares.html" target="_blank">Fares</a></li>
+    <li><a href = "cancellation.html" target ="_blank">Cancellaion</a></li><br>
+    </ol>
+</div>
+       <div class = "trip">
+        <span></span>
+        <input type="radio" id=" One way trip" name="answer" value="One way trip" required>
+        <label for="One way trip">One way trip</label><br><br>
+        <input type="radio" id="Round trip" name="answer" value="Round trip" required>
+        <label for="Round trip">Round trip</label><br>
+        <br>
+    </div>
+    <div class = "route">
+        <label for="From">From:</label><br>
+        <input type="text" id="From" name="From" value=""><br>
+        <label for="lname">To:</label><br>
+        <input type="text" id="To" name="To" value=""><br><br>
+        <label for="From">Date:</label><br>
+        <input type="date" id="Date" name="Date" value=""><br>
+</div>
+
+</body>
+
+<footer>
+    <div id="footer">
+        <ul>
+            <li>Customer Services</li>
+            <li>Complaints</li>
+            <li>Contact us</li>
+            <li>About us</li>
+            <li>Legal and policies</li>
+        </ul>
+        </div>
+</footer>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style1.css">
+<form action="reservation.php" method="post">
+    <div class="elem-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+      <label for="adult">Adults</label>
+      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="child">Children</label>
+      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="Travel-date">Travel-date</label>
+      <input type="date" id="Travel-date" name="Travel-date" required>
+    </div>
+    <hr>
+    <button type="submit">Book The Tickets</button>
+  </form>
+</html>
